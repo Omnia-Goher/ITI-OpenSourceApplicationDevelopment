@@ -1,0 +1,7 @@
+#img{
+    width: 700px;
+    transition: all 2s ease-in-out;
+}
+#img:hover{
+    opacity: 0;
+}

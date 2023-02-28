@@ -1,0 +1,42 @@
+.blink {
+    width: 700px;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+}
+
+.blink:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 8px 15px rgba(127, 85, 204, 0.4);
+    color: #fff;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+
+@keyframes animation {
+   
+    0% {
+        background-color:#ad7a4b;
+        box-shadow: 0px 8px 15px rgba(127, 85, 204, 0.5);
+    }
+
+    50% {
+        background-color: #623f9e;
+        box-shadow: 0px 8px 15px rgba(127, 85, 204, 0.6);
+    }
+
+    100% {
+        background-color: #2a8661;
+        box-shadow: 0px 8px 15px rgba(127, 85, 204, 0.7);
+    }
+}
+
