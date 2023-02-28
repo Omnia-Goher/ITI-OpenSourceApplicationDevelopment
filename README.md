@@ -3,7 +3,7 @@
 ## JavaScript
 
 ### lab 7
-LogIn form -> https://omniagoher.github.io/JS-labs/lab7/index.html
+- LogIn form -> https://omniagoher.github.io/JS-labs/lab7/index.html
 
 ### lab 8
 - To Do App -> https://omniagoher.github.io/JS-labs/lab8/index.html
