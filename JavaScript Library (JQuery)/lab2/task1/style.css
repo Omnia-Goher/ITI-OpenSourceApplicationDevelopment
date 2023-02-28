@@ -1,0 +1,11 @@
+body{
+    background-color: #679eb96b;
+}
+.row:hover {
+    background: rgba(128, 128, 128, 0.466) !important;
+    cursor: pointer;
+}
+
+.background{
+    background: rgba(106, 106, 106, 0.466) !important;
+}

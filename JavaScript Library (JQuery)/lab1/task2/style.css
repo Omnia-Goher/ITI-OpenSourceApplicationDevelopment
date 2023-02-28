@@ -1,0 +1,21 @@
+body{
+    background-color: #679eb96b
+}
+
+#cont{
+    margin-top: 20px;
+}
+img {
+    border-radius: 25px;
+}
+
+p{
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #827c7c60;
+    height: 100px;
+    overflow: hidden;
+    padding: 20px 20px;
+    width: 300px;
+    border-radius: 20px;
+}
