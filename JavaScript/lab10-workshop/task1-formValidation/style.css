@@ -1,0 +1,8 @@
+body{
+    background-color: #2c89e5;
+}
+
+.pass{
+    border-color: rgba(116, 159, 116, 0.795);
+    border: 3px solid rgba(116, 159, 116, 0.795);
+}

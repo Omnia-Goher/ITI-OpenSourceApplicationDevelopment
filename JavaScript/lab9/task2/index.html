@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock Alarm</title>
+</head>
+
+<body>
+    <div class="clock-container">
+        <p id="MyClockDisplay" class="clock" onload="showTime()"></p>
+    </div>
+    <div id='alarm-container'>
+        <h3>Set Alarm Time</h3>
+        <select id='alarmhrs'></select>
+        <select id='alarmmins'></select>
+        <select id='alarmsecs'></select>
+        <select id="ampm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+        <div id='buttonHolder'>
+            <button id='setButton' onClick='alarmSet()'>Set Alarm</button>
+            <button id='clearButton' onClick='alarmClear()'>Clear Alarm</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
