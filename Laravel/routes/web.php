@@ -34,6 +34,8 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.destroy');
 
+    Route::get('/posts/delete', [PostController::class, 'deletePostsFromTwoYears'])->name('posts.deletePostsFromTwoYears');
+
     //comments
     Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
 

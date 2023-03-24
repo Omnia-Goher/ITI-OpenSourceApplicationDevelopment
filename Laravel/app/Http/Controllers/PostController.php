@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePostRequest;
 use App\Http\Requests\UpdatePostRequest;
+use App\Jobs\PruneOldPostsJob;
 use App\Models\Comment;
 use App\Models\Post;
 use App\Models\User;
@@ -95,5 +96,12 @@ class PostController extends Controller
         }
         Post::destroy($id);
         return redirect()->route('posts.index');
+    }
+
+    public function deletePostsFromTwoYears()
+    {
+        dd("prune");
+        dispatch(new PruneOldPostsJob());
+        return redirect()->back()->with('message', 'Old posts have been deleted.');
     }
 }
