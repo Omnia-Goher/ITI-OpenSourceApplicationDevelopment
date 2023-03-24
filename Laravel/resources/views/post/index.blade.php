@@ -23,7 +23,7 @@
                             @foreach ($posts as $post)
                                 <tr>
                                     <td>{{ $post->id }}</td>
-                                    <td>{{ $post->title }}</td>
+                                    <td>{{ $post->slug }}</td>
                                     <td>{{ $post->user->name }}</td>
                                     <td>{{ $post->created_at->format('Y-m-d') }}</td>
                                     <td class="py-3">
@@ -31,10 +31,14 @@
                                             style="background-color: #718470;">View</a>
                                         <a href="{{ route('posts.edit', $post->id) }}" class="btn create-button text-white"
                                             style="background-color: #718470;">Edit</a>
-                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                            data-bs-target="#modal{{ $post->id }}">
-                                            Delete
-                                        </button>
+                                        @if (Auth::check())
+                                            <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                                data-bs-target="#modal{{ $post->id }}">
+                                                Delete
+                                            </button>
+                                        @else
+                                            <a type="button" class="btn btn-danger" href="{{ url('login')}}">Delete</a>
+                                        @endif
                                     </td>
                                 </tr>
                                 <!-- Modal -->

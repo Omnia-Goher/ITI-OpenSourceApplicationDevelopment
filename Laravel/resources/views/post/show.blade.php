@@ -8,7 +8,7 @@
     <section>
         <div class="container w-75 p-5 border shadow-lg rounded-5" style="margin-top: 100px;">
             <h1 class="mb-5 text-center">Post Details</h1>
-            <div class="card border rounded-3 m-5">
+            <div class="card border rounded-3 m-5 text-center">
                 <div class="card-header fs-4">
                     Post Info
                 </div>
@@ -17,10 +17,13 @@
                         <p><cite title="Source Title">{{ $post->title }}</cite></p>
                         <footer class="blockquote-footer">Description : <cite
                                 title="Source Title">{{ $post->description }}</cite></footer>
+                        @if($post->image != null)
+                            <img class="rounded-5 m-4 w-50 h-50" src="{{ Storage::url($post->image) }}" alt="{{$post->image}}">
+                        @endif
                     </blockquote>
                 </div>
             </div>
-            <div class="card border rounded-3 m-5">
+            <div class="card border rounded-3 m-5 text-center">
                 <div class="card-header fs-4">
                     Post Creator Info
                 </div>
@@ -34,7 +37,7 @@
                 </div>
             </div>
             <div class="card border rounded-3 m-5">
-                <div class="card-header fs-4">
+                <div class="card-header fs-4 text-center mb-5">
                     Comments
                 </div>
                 
@@ -43,7 +46,7 @@
                 @endif
                 
                 @foreach ($comments as $comment)
-                    <div class="card-body">
+                    <div class="card-body px-5">
                         <blockquote class="blockquote mb-0">
                             <p><cite title="Source Title">{{ $comment->user->name }}</cite></p>
                             <footer class="blockquote-footer"><cite title="Source Title">{{ $comment->body }}</cite>
@@ -133,6 +136,15 @@
                     Add new Comment
                 </button>
             </div>
+            @if ($errors->any())
+            <div class="alert alert-danger mt-4">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
             <!-- Add Modal -->
             <div class="modal fade" id="addComment" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">

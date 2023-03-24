@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreCommentRequest;
+use App\Http\Requests\UpdateCommentRequest;
 use App\Models\Comment;
 use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
-    public function store(Request $request)
+    public function store(StoreCommentRequest $request)
     {
 
         $body = $request->body;
@@ -24,7 +26,7 @@ class CommentController extends Controller
         return redirect()->back();
     }
 
-    public function update(Request $request, $id)
+    public function update(UpdateCommentRequest $request, $id)
     {
         $body = $request->body;
         $comment_creator  = $request->comment_creator;
@@ -39,6 +41,7 @@ class CommentController extends Controller
 
     public function destroy($id)
     {
+        // take the post id and give it to route
         Comment::destroy($id);
         return redirect()->back();
     }

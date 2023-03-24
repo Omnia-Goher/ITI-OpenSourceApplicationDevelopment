@@ -3,6 +3,7 @@
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
 use Illuminate\Support\Facades\Route;
+use  Illuminate\Support\Facades\Auth;
 
 
 /*
@@ -18,27 +19,35 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 
-Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
 
-Route::get('/posts/{id}/edit', [PostController::class, 'edit'])->name('posts.edit');
+Route::group(['middleware' => ['auth']], function () {
+    //posts
+    Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
 
-Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show');
+    Route::get('/posts/{id}/edit', [PostController::class, 'edit'])->name('posts.edit');
 
-Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
+    Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show');
 
-Route::post('/posts/{id}', [PostController::class, 'update'])->name('posts.update');
+    Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 
-Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.destroy');
+    Route::post('/posts/{id}', [PostController::class, 'update'])->name('posts.update');
 
+    Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.destroy');
 
-Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+    //comments
+    Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
 
-Route::delete('/comments/{id}', [CommentController::class, 'destroy'])->name('comments.destroy');
+    Route::delete('/comments/{id}', [CommentController::class, 'destroy'])->name('comments.destroy');
 
-Route::post('/comments/{id}', [CommentController::class, 'update'])->name('comments.update');
+    Route::post('/comments/{id}', [CommentController::class, 'update'])->name('comments.update');
+});
 
+Route::get('logout', function () {
+    auth()->logout();
+    Session()->flush();
+    return redirect()->route('posts.index');
+})->name('logout');
 
-/* Route::get('/posts/create', function () {
+Auth::routes();
 
-    return view('post.create');
-}); */
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
