@@ -46,6 +46,17 @@
                 @endif
             </div>
 
+            <div class="d-flex flex-column mt-5 justify-content-center align-items-center">
+                    <a class="btn btn-dark px-3 py-2" href="{{ route('gitHub-Login') }}">
+                        <i class="bi bi-github"></i>
+                        Login With Github
+                    </a>
+                    <a class="btn btn-primary mt-3 px-3 py-2" href="{{ route('google-Login') }}">
+                        <i class="bi bi-google"></i>
+                        Login With Google
+                    </a>
+            </div>
+
         </form>
 
         

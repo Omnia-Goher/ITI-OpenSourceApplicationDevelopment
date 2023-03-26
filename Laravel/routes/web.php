@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
 use Illuminate\Support\Facades\Route;
 use  Illuminate\Support\Facades\Auth;
+
 
 
 /*
@@ -49,6 +51,13 @@ Route::get('logout', function () {
     Session()->flush();
     return redirect()->route('posts.index');
 })->name('logout');
+
+
+Route::get('/auth/github/redirect', [LoginController::class, 'gitHub_Login'])->name('gitHub-Login');
+Route::get('/auth/github/callback', [LoginController::class, 'github_callback']);
+
+Route::get('/auth/google/redirect', [LoginController::class, 'google_Login'])->name('google-Login');
+Route::get('/auth/google/callback', [LoginController::class, 'google_callback']);
 
 Auth::routes();
 
