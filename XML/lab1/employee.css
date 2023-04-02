@@ -1,0 +1,18 @@
+employee,employee addresses,employee phones, employee address {
+    display: flex;
+    flex-direction: column;
+}
+
+employee{
+    width: 50%;
+    margin: 0 auto;
+    background-color: bisque;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+employee name,employee addresses,employee phones{
+    margin-bottom: 10px;
+}

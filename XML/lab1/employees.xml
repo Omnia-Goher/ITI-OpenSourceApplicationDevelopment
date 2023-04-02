@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/css" href="employee.css" ?>
+<employess>
+    <employee>
+        <name>Omnia</name>
+        <phones>
+            <phone type="mobile">01003911901</phone>
+            <phone type="home">0453319579</phone>
+            <phone type="work">025896484</phone>
+        </phones>
+        <addresses>
+            <address>
+                <street>Ibn Khaldon Street</street>
+                <buildingNumber>1</buildingNumber>
+                <region>Adbel salam</region>
+                <city>Damnahour</city>
+                <country>Egypt</country>
+            </address>
+        </addresses>
+        <email>omnai@gmail.com</email>
+    </employee>
+
+    <employee>
+        <name>Eman</name>
+        <phones>
+            <phone type="mobile">0102658548</phone>
+            <phone type="home">0453215845</phone>
+            <phone type="work">0365487415</phone>
+        </phones>
+        <addresses>
+            <address>
+                <street>Karam Street</street>
+                <buildingNumber>2</buildingNumber>
+                <region>El Zawya</region>
+                <city>Damnahour</city>
+                <country>Egypt</country>
+            </address>
+        </addresses>
+        <email>eman@gmail.com</email>
+    </employee>
+
+</employess>
