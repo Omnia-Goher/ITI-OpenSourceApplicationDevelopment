@@ -1,0 +1,13 @@
+library,chapters,chapter,parts,part,books,book,parts,sections,section{
+    display: flex;
+    flex-direction: column;
+}
+
+chapter,part,preface,section,summary,title{
+    margin-bottom: 10px;
+}
+
+book{
+    background-color: bisque;
+    margin-bottom: 20px;
+}

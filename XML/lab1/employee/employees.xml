@@ -1,6 +1,6 @@
 <?xml-stylesheet type="text/css" href="employee.css" ?>
 <employess>
-    <employee>
+    <employee ISBN="1">
         <name>Omnia</name>
         <phones>
             <phone type="mobile">01003911901</phone>
@@ -19,7 +19,7 @@
         <email>omnai@gmail.com</email>
     </employee>
 
-    <employee>
+    <employee ISBN="2">
         <name>Eman</name>
         <phones>
             <phone type="mobile">0102658548</phone>

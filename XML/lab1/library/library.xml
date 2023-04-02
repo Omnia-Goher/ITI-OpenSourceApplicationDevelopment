@@ -1,0 +1,154 @@
+<?xml-stylesheet type="text/css" href="library.css"?>
+<library>
+    <location>Location</location>
+    <description>Description</description>
+    <librarian>Librarian</librarian>
+    <books>
+        <book ISBN="1">
+            <title>Book 1 Title</title>
+            <author>Book 1 Author</author>
+            <preface>Book 1 Preface</preface>
+            <parts>
+                <part ISBN="11">
+                    <title>Part 1 Title</title>
+                    <chapters>
+                        <chapter ISBN="111">
+                            <title>Chapter 1</title>
+                            <summary>Chapter 1 summary</summary>
+                            <sections>
+                                <section ISBN="1111">
+                                    <paragraph>Section 1 paragraph 1</paragraph>
+                                    <paragraph>Section 1 paragraph 2</paragraph>
+                                </section>
+                                <section ISBN="1112">
+                                    <paragraph>Section 2 paragraph 1</paragraph>
+                                    <paragraph>Section 2 paragraph 2</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                        <chapter ISBN="112">
+                        <title>Chapter 2</title>
+                            <summary>Chapter 2 summary</summary>
+                            <sections>
+                                <section ISBN="1121">
+                                    <paragraph>Section 1 paragraph 1</paragraph>
+                                    <paragraph>Section 1 paragraph 2</paragraph>
+                                </section>
+                                <section ISBN="1122">
+                                    <paragraph>Section 2 paragraph 1</paragraph>
+                                    <paragraph>Section 2 paragraph 2</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+                <part ISBN="12">
+                    <title>Part 2 Title</title>
+                    <chapters>
+                        <chapter ISBN="121">
+                            <title>Chapter 1</title>
+                            <summary>Chapter 1 summary</summary>
+                            <sections>
+                                <section ISBN="1211">
+                                    <paragraph ISBN="12111">Section 1 paragraph 1</paragraph>
+                                    <paragraph ISBN="12112">Section 1 paragraph 2</paragraph>
+                                </section>
+                                <section ISBN="1212">
+                                    <paragraph ISBN="12121">Section 2 paragraph 1</paragraph>
+                                    <paragraph ISBN="12122">Section 2 paragraph 2</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                        <chapter ISBN="122">
+                        <title>Chapter 2</title>
+                            <summary>Chapter 2 summary</summary>
+                            <sections>
+                                <section ISBN="1221">
+                                    <paragraph ISBN="12211">Section 1 paragraph 1</paragraph>
+                                    <paragraph ISBN="12212">Section 1 paragraph 2</paragraph>
+                                </section>
+                                <section ISBN="1222">
+                                    <paragraph ISBN="12221">Section 2 paragraph 1</paragraph>
+                                    <paragraph ISBN="12222">Section 2 paragraph 2</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+        <book ISBN="2">
+            <title>Book 2 Title</title>
+            <author>Book 2 Author</author>
+            <preface>Book 2 Preface</preface>
+            <parts>
+                <part ISBN="21">
+                    <title>Part 1 Title</title>
+                    <chapters>
+                        <chapter ISBN="211">
+                            <title>Chapter 1</title>
+                            <summary>Chapter 1 summary</summary>
+                            <sections>
+                                <section ISBN="2111">
+                                    <paragraph ISBN="21111">Section 1 paragraph 1</paragraph>
+                                    <paragraph ISBN="21112">Section 1 paragraph 2</paragraph>
+                                </section>
+                                <section ISBN="2112">
+                                    <paragraph ISBN="21121">Section 2 paragraph 1</paragraph>
+                                    <paragraph ISBN="21121">Section 2 paragraph 2</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                        <chapter ISBN="212">
+                        <title>Chapter 2</title>
+                            <summary>Chapter 2 summary</summary>
+                            <sections>
+                                <section ISBN="2121">
+                                    <paragraph ISBN="21211">Section 1 paragraph 1</paragraph>
+                                    <paragraph ISBN="21212">Section 1 paragraph 2</paragraph>
+                                </section>
+                                <section ISBN="2122">
+                                    <paragraph ISBN="21221">Section 2 paragraph 1</paragraph>
+                                    <paragraph ISBN="21222">Section 2 paragraph 2</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+                <part ISBN="22">
+                    <title>Part 2 Title</title>
+                    <chapters>
+                        <chapter ISBN="221">
+                            <title>Chapter 1</title>
+                            <summary>Chapter 1 summary</summary>
+                            <sections>
+                                <section ISBN="2211">
+                                    <paragraph ISBN="22111">Section 1 paragraph 1</paragraph>
+                                    <paragraph ISBN="22112">Section 1 paragraph 2</paragraph>
+                                </section>
+                                <section ISBN="2212">
+                                    <paragraph ISBN="22121">Section 2 paragraph 1</paragraph>
+                                    <paragraph ISBN="22122">Section 2 paragraph 2</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                        <chapter ISBN="222">
+                        <title>Chapter 2</title>
+                            <summary>Chapter 2 summary</summary>
+                            <sections>
+                                <section ISBN="2221">
+                                    <paragraph ISBN="22211">Section 1 paragraph 1</paragraph>
+                                    <paragraph ISBN="22212">Section 1 paragraph 2</paragraph>
+                                </section>
+                                <section ISBN="2222">
+                                    <paragraph  ISBN="22221">Section 2 paragraph 1</paragraph>
+                                    <paragraph  ISBN="22222">Section 2 paragraph 2</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+    </books>
+</library>
