@@ -1,3 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE employees SYSTEM "employees.dtd">
-<employees><employee><name>Omnia</name><email>omnia@gmail.com</email><phone>01003911901</phone></employee><employee><name>Eman</name><email>eman@gmail.com</email><phone>0103255145</phone></employee><employee><name>Heba</name><email>heba@gmail.com</email><phone>0103255545</phone></employee></employees>
+<employees>
+    <employee>
+        <name>Omnia</name>
+        <email>omnia@gmail.com</email>
+        <phone>01003911901</phone>
+    </employee>
+    <employee>
+        <name>Eman</name>
+        <email>eman44@gmail.com</email>
+        <phone>0103255145</phone>
+    </employee>
+    <employee>
+        <name>khaled</name>
+        <email>khaled@gmail.com</email>
+        <phone>01003911901</phone>
+    </employee>
+</employees>

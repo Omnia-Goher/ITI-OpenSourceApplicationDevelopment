@@ -28,6 +28,9 @@
                 <input type="submit" class="btn btn-dark me-1 rounded-1" name="action" value="Prev">
                 <input type="submit" class="btn btn-dark me-1 rounded-1" name="action" value="Next">
                 <input type="submit" class="btn btn-dark me-1 rounded-1" name="action" value="Add">
+                <input type="submit" class="btn btn-dark me-1 rounded-1" name="action" value="Update">
+                <input type="submit" class="btn btn-dark me-1 rounded-1" name="action" value="Delete">
+                <input type="submit" class="btn btn-dark me-1 rounded-1" name="action" value="Clear">
             </div>
         </form>
 

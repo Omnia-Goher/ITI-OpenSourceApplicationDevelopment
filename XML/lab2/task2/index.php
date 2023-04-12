@@ -42,13 +42,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($_POST["action"] === "Prev" && $index > 0) {
         $_SESSION["index"] -= 1;
     }
+
+    if ($_POST["action"] === "Delete") {
+        $root = $doc->documentElement;
+        $deleted_element = $root->childNodes[$_SESSION["index"]];
+        $root->removeChild($deleted_element);
+        $doc->save($file);
+        if ($_SESSION["index"] > 0) {
+            $_SESSION["index"] -= 1;
+        }
+    }
+    if ($_POST["action"] === "Update") {
+        $root = $doc->documentElement;
+        $updated_element = $root->childNodes[$_SESSION["index"]];
+        $updated_element->childNodes[0]->nodeValue = $_POST['name'];
+        $updated_element->childNodes[1]->nodeValue = $_POST['email'];
+        $updated_element->childNodes[2]->nodeValue = $_POST['phone'];
+        $doc->save($file);
+    }
+
+    $flag = false;
+    if ($_POST["action"] === "Clear") {
+        $flag = true;
+    }
 }
 
-$index = $_SESSION["index"];
+$index = $_SESSION["index"] ?? 0;
 $employees = $doc->documentElement;
 $employee = $employees->childNodes[$index];
 $name = $employee->childNodes[0]->nodeValue;
 $email = $employee->childNodes[1]->nodeValue;
 $phone = $employee->childNodes[2]->nodeValue;
+
+if ($flag) {
+    $name = $email = $phone = "";
+    $flag = false;
+}
 
 require_once("views/view.php");
