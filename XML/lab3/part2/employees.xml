@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employee.xsl"?>
+<employees>
+	<employee isbn="1">
+		<name>Omnia</name>
+		<email>omnia@gmail.com</email>
+		<phones>
+			<phone type="mobile">01003911901</phone>
+		</phones>
+		<addresses>
+			<address>
+				<Country>Eqypt</Country>
+				<City>Damanhour</City>
+				<Region>region</Region>
+				<Street>Ibn khaldon</Street>
+				<BuildingNumber>1</BuildingNumber>
+			</address>
+		</addresses>
+	</employee>
+	<employee isbn="2">
+		<name>Eman</name>
+		<email>eman@gmail.com</email>
+		<phones>
+			<phone type="mobile">01003911901</phone>
+		</phones>
+		<addresses>
+			<address>
+				<Country>Eqypt</Country>
+				<City>Damanhour</City>
+				<Region>region</Region>
+				<Street>Ibn khaldon</Street>
+				<BuildingNumber>1</BuildingNumber>			
+			</address>
+		</addresses>
+	</employee>
+	
+</employees>
