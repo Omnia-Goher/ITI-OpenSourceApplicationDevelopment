@@ -1,0 +1,6 @@
+<div class="container mt-5 shadow-lg rounded-5 w-50 py-5 border mx-auto text-center">
+    <label for="text" class="fs-6 fw-semibold">Text</label>
+    <input type="text" name="text" id="text" [(ngModel)]="text" placeholder="Enter any Text.." class="ms-4 mb-5 w-50 rounded-5 ps-2">
+    <p class="mb-5">Output : <span class="fst-italic">{{text}}</span></p>
+    <button type="button" class="btn btn-dark" (click)="reset()">Clear</button>
+</div>

@@ -1,0 +1,17 @@
+<div class="container my-5 shadow-lg rounded-5 w-50 py-5 border mx-auto text-center">
+    <div class="imageslider mb-5">
+        <div class="slide px-5 active">
+          <img src="../../../assets/images/nature1.jfif" alt="Image-1" class="rounded-5"/>
+        </div>
+        <div class="slide px-5">
+          <img src="../../../assets/images/nature2.jfif" alt="Image-2" class="rounded-5"/>
+        </div>
+        <div class="slide px-5">
+          <img src="../../../assets/images/nature3.png" alt="Image-3" class="rounded-5"/>
+        </div>
+    </div>
+    <button type="button" class="btn btn-dark ms-3" [disabled]="prevDisabled" value="prev" (click)="prevImage()"><i class="bi bi-rewind"></i></button>
+    <button type="button" class="btn btn-dark ms-3" [disabled]="nextDisabled" value="next" (click)="nextImage()"><i class="bi bi-fast-forward"></i></button>
+    <button type="button" class="btn btn-dark ms-3" [disabled]="playDisabled" value="play" (click)="playImages()"><i class="bi bi-play"></i></button>
+    <button type="button" class="btn btn-dark ms-3" [disabled]="pauseDisabled" value="pause" (click)="pauseImages()"><i class="bi bi-pause"></i></button>
+</div>
