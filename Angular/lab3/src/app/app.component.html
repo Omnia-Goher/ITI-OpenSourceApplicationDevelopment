@@ -1,0 +1,11 @@
+<div class="container text-center mt-5">
+  <div class="row row-cols-2">
+    <div class="col">
+      <app-register (event)="getStudent($event)"></app-register>
+    </div>
+    <div class="col">
+      <app-students [students]="students"></app-students>
+    </div>
+
+</div>
+</div>

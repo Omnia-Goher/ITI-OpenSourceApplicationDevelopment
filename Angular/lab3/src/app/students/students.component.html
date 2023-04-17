@@ -1,0 +1,19 @@
+<div class="container mt-5 shadow-lg rounded-5 p-5 border text-center"  style="min-height: 400px;">
+    <h2>Students</h2>
+    <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let s of students; index as i">
+            <td>{{i+1}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.age}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

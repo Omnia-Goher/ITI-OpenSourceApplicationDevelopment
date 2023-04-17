@@ -1,0 +1,32 @@
+<div class="container mt-5 shadow-lg rounded-5 p-5 border"  style="min-height: 400px;">
+    <div class="form-group mt-4 mb-2 px-5">
+        <label for="name" class="mb-1">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter Name" [(ngModel)]="name"
+          [ngClass]="{'is_vaild': name && name.length>=3,'is_invaild':name && name.length<3}">
+        <div class="text-center mt-4 text-success" *ngIf="name.length>=3; else invaildName">
+          <p>Name is Valid</p>
+        </div>
+        <ng-template #invaildName>
+          <div class="text-center mt-4 text-danger" *ngIf="name">
+            <p>Name is Not Valid</p>
+          </div>
+        </ng-template>
+    </div>
+    <div class="form-group mb-2 px-5 mt-4">
+        <label for="age" class="mb-1">Age</label>
+        <input type="text" class="form-control" id="age" placeholder="Age" [(ngModel)]="age"
+          [ngClass]="{'is_vaild': age && (+age)>20 && (+age)<40 ,'is_invaild':age && (+age)<=20 || (+age)>=40}">
+        <div class="text-center mt-4 text-success" *ngIf="(+age)>20 && (+age)<40; else invaildAge">
+          <p>Age is Valid</p>
+        </div>
+        <ng-template #invaildAge>
+          <div class="text-center mt-4 text-danger" *ngIf="age">
+            <p>Age is Not Valid</p>
+          </div>
+        </ng-template>
+    </div>
+    <div class="text-center mt-5">
+        <button type="button" class="btn btn-dark px-5" (click)="add()">Add</button>
+    </div>
+</div>
+
