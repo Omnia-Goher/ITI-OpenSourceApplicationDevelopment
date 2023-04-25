@@ -1,0 +1,17 @@
+<div *ngIf="Student; else falseBlock" class="container mt-5 shadow-lg rounded-5 p-5 border text-center">
+    <div class="card-container">
+      <div class="top-card"></div>
+      <div class="top-card2"></div>
+      <div class="circle"></div>
+      <img class="image-class" style="height: 200px;" src="../../../assets/images/personal-43.png">
+      <p class="fw-bold mt-3">{{Student.name}}</p>
+      <p class="mb-3">{{Student.email}}</p>
+      <p>{{Student.age}} years old</p>
+    </div>
+  </div>
+
+  <ng-template #falseBlock>
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </ng-template>

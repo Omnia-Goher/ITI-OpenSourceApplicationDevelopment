@@ -1,0 +1,25 @@
+<div class="container mt-5 shadow-lg rounded-5 p-5 border w-50"  style="min-height: 400px;">
+    <form (ngSubmit)="Update(name.value, age.value, email.value)" method="post" class="px-5">
+        <h1 class="text-center mb-5">Update Student</h1>
+        <div class="form-group mb-2">
+            <label for="name" class="mb-1">Name</label>
+            <input #name value="{{student.name}}" type="text" class="form-control" id="name" aria-describedby="nameHelp"
+             autocomplete="flase" >
+          </div>
+          <div class="form-group mb-2">
+            <label for="email" class="mb-1">Email</label>
+            <input #email value="{{student.email}}" type="email" class="form-control" id="email" placeholder="Email" autocomplete="flase">
+          </div>
+          <div class="form-group mb-2">
+            <label for="age" class="mb-1">Age</label>
+            <input #age value="{{student.age}}" type="text" class="form-control" id="age" placeholder="Age" autocomplete="flase">
+          </div>
+        <div class="text-center mt-5">
+            <input class="btn btn-dark px-5" id="nm" type="submit" value="Update"/>
+        </div>
+    </form>
+    <div class="alert alert-success text-center p-1 mt-3 w-50 mx-auto" *ngIf="isUpdated">
+        Student Updated Successfully !!
+    </div>
+</div>
+

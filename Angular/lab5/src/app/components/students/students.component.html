@@ -1,0 +1,31 @@
+
+<div class="container mt-5 shadow-lg rounded-5 p-5 border text-center"  style="min-height: 400px;">
+    <h2>Students</h2>
+    <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Email</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let s of Students; index as i">
+            <td>{{i+1}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.age}}</td>
+            <td>{{s.email}}</td>
+            <td>
+              <a class="btn btn-dark me-3" routerLink="/students/{{s.id}}">Details</a>
+              <a class="btn btn-dark me-3" routerLink="/students/edit/{{ s.id }}">Edit</a>
+              <a class="btn btn-danger"  (click)="Delete(s.id)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Delete
+              </a>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
