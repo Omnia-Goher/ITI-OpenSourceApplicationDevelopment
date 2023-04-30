@@ -1,4 +1,4 @@
-## Student Blog (CRUD operations)
+# Student Blog (CRUD operations)
 
 ## INTRODUCTION
 Using Angular, I developed a student blog that features a user-friendly interface utilizing "Reactive Routing" technology. The blog allows for easy student registration and provides a comprehensive list of students with their relevant details.
