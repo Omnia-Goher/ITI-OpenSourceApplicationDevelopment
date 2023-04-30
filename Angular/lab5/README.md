@@ -1,27 +1,25 @@
-# Lab5
+## Student Blog (CRUD operations)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+## INTRODUCTION
+Using Angular, I developed a student blog that features a user-friendly interface utilizing "Reactive Routing" technology. The blog allows for easy student registration and provides a comprehensive list of students with their relevant details.
 
-## Development server
+## FEATURES
+- View a comprehensive table of all currently enrolled students.
+- Retrieve detailed information for a particular student using their unique identifier.
+- Register a new student while ensuring that all provided information is valid.
+- Update an existing student.
+- Remove a student from the records by specifying their unique identifier.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## INSTALLATION
+To Install this project follow these steps:
+- Clone repo
+- Install the dependencies witn npm install
+- Run Json Server with json-server --watch data.json
+- Run the application with ng serve
 
-## Code scaffolding
+## Demo
+https://user-images.githubusercontent.com/48277968/235379218-b42219c2-9ddc-460f-8604-4c35ae1a5d4e.mp4
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## SUPPORT
+If you like my work, feel free to </br>
+⭐ this repository. It helps.
