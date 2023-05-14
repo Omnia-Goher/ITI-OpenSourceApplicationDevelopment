@@ -1,4 +1,4 @@
 MYSQLHOST="127.0.0.1"
 MYSQLUSER="root"
 MYSQLPASS=""
-MYSQLDB="bash_lab3"
+MYSQLDB="bash_lab"
