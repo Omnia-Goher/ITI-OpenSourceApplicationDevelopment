@@ -1,2 +1,2 @@
 ## Lab 1
-![Alt text](c:/Users/mera/Desktop/lab1.PNG)
+<img src="C:/Users/mera/Desktop/lab1.png" width="128"/>
