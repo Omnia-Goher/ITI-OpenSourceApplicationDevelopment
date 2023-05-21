@@ -1,0 +1,10 @@
+.nav-item{
+    margin: 0;
+    padding: 0 0 0 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+.nav-item:hover{
+    color: gray;
+}
