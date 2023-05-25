@@ -1,0 +1,21 @@
+{% extends 'main/base_layout.html' %}
+{% load static %}
+
+{% block title %}Create New Book{% endblock %}
+
+{% block main-content %}
+<link href="../../static/bookStore/assets/css/form.css" rel="stylesheet">
+<div class="container text-center border shadow-lg w-50 rounded-5 mt-5 " style="margin-bottom: 150px;">
+  <form class="container form py-5 justify-content-center align-items-center" id="form-edit" method="POST" action="{% url 'BookStore:book-store' %}">
+    <div class="title mb-4">Add New Book</div>
+    {% csrf_token %} {% for field in form %}
+    <div class="input-group">
+      {{ field.errors }} {{ field.label_tag }} {{ field }}
+    </div>
+    {% endfor %}
+    <button type="submit " class="btn btn-dark px-4 mt-4">Add</button>
+  </form>
+</div>
+
+
+{% endblock %}

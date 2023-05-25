@@ -1,0 +1,16 @@
+{% extends 'main/base_layout.html' %}
+{% load static %}
+
+{% block title %}Create New Book{% endblock %}
+
+{% block main-content %}
+<link href="../../static/bookStore/assets/css/form.css" rel="stylesheet">
+<div class="container border shadow-lg w-50 rounded-5 mt-5 " style="margin-bottom: 150px;">
+    <form class="container form py-5 justify-content-center align-items-center" id="form-edit" method="POST" action="{% url 'BookStore:book-update' book.id  %}">
+        <div class="title mb-4">Update a Book</div>
+        {% csrf_token %} {{form.as_p}}
+        <button type="submit" class="btn btn-dark px-4 mt-4">Update</button>
+    </form>
+</div>
+
+{% endblock %}

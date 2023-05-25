@@ -1,0 +1,42 @@
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75%;
+  }
+  
+  .form .title {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px !important;
+    width: 700px;
+  }
+
+  .form label{
+    padding-bottom: 7px;
+  }
+
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 700px;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  .form input:focus, .form textarea:focus{
+    border: 1px solid rgb(0, 0, 0);
+  }
+  .form button {
+   width: 50%;
+  }
+      
