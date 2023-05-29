@@ -93,7 +93,7 @@ export default (await import('vue')).defineComponent({
             else this.btn = 'Form';
         },
         DeleteAdmin(index) {
-            this.filterAdmins.splice(index, 1);
+           this.filterAdmins.splice(index, 1);
         },
         DeleteUser(index) {
             this.filterUsers.splice(index, 1);

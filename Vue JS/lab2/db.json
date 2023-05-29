@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 3,
+      "first_name": "Marty",
+      "last_name": "Karolowski",
+      "gender": "Female"
+    },
+    {
+      "id": 4,
+      "first_name": "Halli",
+      "last_name": "Matisoff",
+      "gender": "Female"
+    },
+    {
+      "id": 6,
+      "first_name": "Collen",
+      "last_name": "Sellick",
+      "gender": "Female"
+    }
+  ]
+}
