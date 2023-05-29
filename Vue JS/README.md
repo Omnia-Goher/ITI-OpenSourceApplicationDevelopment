@@ -5,7 +5,6 @@ https://github.com/Omnia-Goher/ITI-OpenSourceApplicationDevelopment/assets/48277
 https://github.com/Omnia-Goher/ITI-OpenSourceApplicationDevelopment/assets/48277968/c7eaa5e7-f8b0-4c1d-80f1-311aaa1de6d0
 
 ## Lab 3
-https://github.com/Omnia-Goher/ITI-OpenSourceApplicationDevelopment/assets/48277968/571c47a7-3ef6-4552-a533-f3b4f2fbccbe
 
 
 
