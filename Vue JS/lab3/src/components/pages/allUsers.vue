@@ -1,6 +1,6 @@
 <template>
   <div class="w-75 mx-auto">
-      <h2 class="mt-5">ALL Users</h2>
+      <h2 class="mt-5">All Users</h2>
     <table class="table table-striped mt-3">
       <thead>
         <tr>
@@ -16,7 +16,7 @@
           <td>{{ user.first_name }}</td>
           <td>{{ user.last_name }}</td>
           <td class="text-center">
-              <button class="btn btn-sm btn-primary me-2 text-center"> <router-link :to="`/users/${user.id}`" class="text-decoration-none text-center text-white px-5">More</router-link></button>
+              <button class="btn btn-sm btn-info me-2 text-center"> <router-link :to="`/users/${user.id}`" class="text-decoration-none text-center text-white px-5">View</router-link></button>
           </td>
         </tr>
       </tbody>
