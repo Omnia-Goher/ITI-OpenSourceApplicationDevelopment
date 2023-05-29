@@ -38,11 +38,11 @@ setup() {
       .get("http://localhost:3000/users")
       .then((res) => {
         console.log(res.data);
-        users.value = res.data; // Update the value of the reactive reference
+        users.value = res.data; 
       })
       .catch((err) => console.log(err));
   };
-  getallusers(); // Call the function to fetch users
+  getallusers(); 
   return {
     users,
   };
@@ -52,6 +52,6 @@ setup() {
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 </style>
