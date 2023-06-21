@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: omnia1
+  email: omnia@test.com
+  encrypted_password: test1
+
+two:
+  id: 2
+  name: omnia2
+  email: omnia2@test.com
+  encrypted_password: test2
